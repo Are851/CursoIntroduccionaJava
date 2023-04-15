@@ -10,7 +10,7 @@ package Ejercicio1LibroA;
  *
  * @author flavia
  */
-public class OBJETO {
+public class Main {
       public static void main(String[] args) {
       
         ATRIBUTOSLIBRO ATRIBUTOSLIBRO = new ATRIBUTOSLIBRO (); 

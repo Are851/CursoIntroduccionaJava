@@ -1,5 +1,5 @@
 
-package mascota.Entidades;
+package mascota;
 
 
 public class Usuario {

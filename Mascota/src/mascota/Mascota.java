@@ -1,4 +1,6 @@
-package mascota.Entidades;
+package mascota;
+
+import java.util.Scanner;
 
 public class Mascota {
 
@@ -24,6 +26,12 @@ public Mascota (String nombre, String apodo, String tipo, String color, String e
         this.cola = cola;
         this.raza = raza;
     }
+public Mascota(String nombre, String apodo, String tipo) {
+    this.nombre = nombre;
+    this.apodo = apodo;
+    this.tipo = tipo;
+    this.energia = 1000;
+}
 
     public void setNombre (String nombre){
         if (nombre.length() >0){
@@ -50,7 +58,6 @@ public Mascota (String nombre, String apodo, String tipo, String color, String e
     public String getNombre() {
         return nombre;
     }
-
     public int pasear(int restarenergia){
         energia-=restarenergia;
         return energia;
@@ -59,8 +66,21 @@ public Mascota (String nombre, String apodo, String tipo, String color, String e
     @Override
     public String toString() {
         return "Mascota{" + "nombre=" + nombre + ", apodo=" + apodo + ", tipo=" + tipo + ", color=" + color + ", edad=" + edad + ", cola=" + cola + ", raza=" + raza + ", energia=" + energia + '}';
-    }       
+    }  
+    
+   public void Mascotacarga() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese edad: ");
+        this.edad = sc.next();
+        System.out.print("Ingrese tipo de perro: ");
+        this.tipo = sc.next();
+        System.out.print("Ingrese el color del perro: ");
+        this.color = sc.next();
+        System.out.println("Edad: "+this.edad+"tipo perro"+ this.tipo+"color del perro:"+this.color);
+       
     }
+   
+     }
             
 
 
