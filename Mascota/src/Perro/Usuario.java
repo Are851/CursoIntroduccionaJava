@@ -1,5 +1,5 @@
 
-package mascota;
+package Perro;
 
 
 public class Usuario {
