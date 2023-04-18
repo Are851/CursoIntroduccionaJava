@@ -5,7 +5,7 @@
 ///Después, a través de otro método calcular y devolver la distancia que 
 ///existe entre los dos puntos que existen en la clase Puntos. 
 // Sin Getter y Setter
-package EjercicioExtra2A;
+package EjercicioExtra2ASInGetySet;
 
 import java.util.Scanner;
 

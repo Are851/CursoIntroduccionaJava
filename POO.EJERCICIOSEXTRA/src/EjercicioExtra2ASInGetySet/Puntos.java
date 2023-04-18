@@ -1,5 +1,5 @@
 
-package EjercicioExtra2A;
+package EjercicioExtra2ASInGetySet;
 
 
 public class Puntos {

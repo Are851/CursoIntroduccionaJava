@@ -1,4 +1,4 @@
-package Ejercicio3OPeraciones;
+package Ejercicio3SinGetniSet;
 
 import java.util.Scanner;
 ///Atributos

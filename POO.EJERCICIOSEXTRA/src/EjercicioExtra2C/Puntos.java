@@ -9,9 +9,12 @@ package EjercicioExtra2C;
 import java.util.Scanner;
 
 public class Puntos {
-    private double x1, y1, x2, y2;
 
-    public void crearPuntos() {
+    public  double GetY1;
+    public  double GetY2;
+    private  double x1, y1, x2, y2;
+
+    public  void crearPuntos() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese la coordenada x del primer punto: ");
         x1 = sc.nextDouble();
@@ -23,16 +26,10 @@ public class Puntos {
         y2 = sc.nextDouble();
         sc.close();
     }
-
-    public double calcularDistancia() {
+        public  double calcularDistancia() {
         double distancia = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
         return distancia;
     }
 
-    public static void main(String[] args) {
-        Puntos puntos = new Puntos();
-        puntos.crearPuntos();
-        double distancia = puntos.calcularDistancia();
-        System.out.println("La distancia entre los dos puntos es: " + distancia);
-    }
+    
 }

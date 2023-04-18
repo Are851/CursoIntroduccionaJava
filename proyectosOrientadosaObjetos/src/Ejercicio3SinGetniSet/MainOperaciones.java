@@ -1,6 +1,6 @@
-package Ejercicio3OPeraciones;
+package Ejercicio3SinGetniSet;
 public class MainOperaciones {
-   public static void main(String[] args) {
+   public void main(String[] args) {
     Operacion operacion = new Operacion();
     operacion.crearOperacion();
     System.out.println("La suma es: " + operacion.sumar());

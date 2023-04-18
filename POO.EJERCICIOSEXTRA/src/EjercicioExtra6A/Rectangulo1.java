@@ -2,7 +2,7 @@
 ///y un método "calcular_area" que calcule y devuelva el área del rectángulo. 
 ///Luego crea un objeto "rectangulo1" de la clase "Rectángulo" con
 ///lados de 4 y 6 y imprime el área del rectángulo.
-package EjercicioExtra6;
+package EjercicioExtra6A;
 
 public class Rectangulo1 {
     private final  int lado1;

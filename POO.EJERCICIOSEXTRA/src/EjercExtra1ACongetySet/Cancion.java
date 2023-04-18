@@ -3,7 +3,7 @@
 //título y el autor a cadenas vacías y otro que reciba como parámetros el 
 ///título y el autor de la canción. 
 ///Se deberán además definir los métodos getters y setters correspondientes.
-package EjercicioExtra1;
+package EjercExtra1ACongetySet;
 
 import java.util.Scanner;
 

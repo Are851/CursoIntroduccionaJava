@@ -6,7 +6,7 @@
 ///atributo del objeto.
 //Método area(): para calcular el área de la circunferencia (Area=〖π*radio〗^2).
 //Método perimetro(): para calcular el perímetro (Perimetro=2*π*radio).
-package Ejercicio2Circunferencia;
+package Ejercicio2Static;
 
 import java.util.Scanner;
 

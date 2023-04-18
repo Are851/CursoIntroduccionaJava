@@ -1,5 +1,5 @@
 
-package Ejercicio2Circunferencia;
+package Ejercicio2Static;
 
  import java.util.Scanner;
 public class MainCircunferencia {

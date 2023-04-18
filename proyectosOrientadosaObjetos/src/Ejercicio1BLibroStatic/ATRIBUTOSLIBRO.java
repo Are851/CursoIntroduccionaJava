@@ -1,9 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Ejercicio1LibroA;
+
+package Ejercicio1BLibroStatic;
 
 import java.util.Scanner;
 
@@ -28,9 +24,7 @@ public class ATRIBUTOSLIBRO {
         this.NumeroDePaginas = NumeroDePaginas;
     }
     
-    /**
-     *
-     */
+
     public void libroCarga() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese el numero de ISBN del libro: ");

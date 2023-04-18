@@ -19,6 +19,10 @@ public class Puntos {
         this.y2 = y2;
     }
 
+    public Puntos() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public double calcularDistancia() {
         double distancia = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
         return distancia;
@@ -55,4 +59,5 @@ public class Puntos {
     public void setY2(double y2) {
         this.y2 = y2;
     }  
+
 }

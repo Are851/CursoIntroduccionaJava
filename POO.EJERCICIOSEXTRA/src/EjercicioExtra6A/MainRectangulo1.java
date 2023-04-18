@@ -1,4 +1,4 @@
-package EjercicioExtra6;
+package EjercicioExtra6A;
 
 public class MainRectangulo1 {
  public static void main(String[] args) {

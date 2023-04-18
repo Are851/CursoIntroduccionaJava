@@ -5,7 +5,7 @@
  */
 package guia7.ejercicioextra05;
 
-import entidades.Empleado;
+import EjercicioExtra5A.Empleado;
 import java.util.Scanner;
 
 

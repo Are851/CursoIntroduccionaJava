@@ -8,7 +8,7 @@
 ///Se deberán además definir los métodos getters, setters y 
 ///constructores correspondientes.
 //Superficie = base * altura / Perímetro = (base + altura) * 2.
-package Ejercicio4Rectangulo;
+package Ejercicio4RectanguloConGetySet;
  import java.util.Scanner;
 
 public class Rectangulo {

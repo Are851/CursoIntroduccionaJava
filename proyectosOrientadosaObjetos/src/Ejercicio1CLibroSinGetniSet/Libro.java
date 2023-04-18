@@ -1,4 +1,4 @@
-package Ejercicio1Libro;
+package Ejercicio1CLibroSinGetniSet;
 
 //// Crear una clase llamada Libro que contenga los siguientes atributos: 
 

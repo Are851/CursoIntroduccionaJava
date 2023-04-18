@@ -15,6 +15,10 @@ public class Empleado {
         this.edad = edad;
         this.salario = salario;
     }
+
+    public Empleado() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public double calcular_aumento() {
         double aumento = 0;
