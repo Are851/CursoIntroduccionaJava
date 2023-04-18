@@ -3,7 +3,7 @@
 ///salarial de un empleado en función de su edad y salario actual. 
 ///El aumento salarial debe ser del 10% si el empleado tiene más de 
 //30 años o del 5% si tiene menos de 30 años.
-package EjercicioExtra5;
+package EjercicioExtra5A;
 
 public class Empleado {
    private String nombre;

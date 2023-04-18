@@ -4,10 +4,10 @@ package EjercicioExtra6B;
 
 public class Main {
       public static void main(String[] args) {
-        Rectangulo rectangulo1 = new Rectangulo(4, 6);
+        Rectangulo rec1 = new Rectangulo();
         
-        double area = rectangulo1.calcularArea();
-        System.out.println("El área del rectángulo es: " + area);
+       
+        System.out.println("El área del rectángulo es: " +  rec1.calcularArea());
     }
 }
   

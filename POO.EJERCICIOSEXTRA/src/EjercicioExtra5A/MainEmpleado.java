@@ -1,4 +1,4 @@
-package EjercicioExtra5;
+package EjercicioExtra5A;
 
 public class MainEmpleado {
     public static void main(String[] args) {
