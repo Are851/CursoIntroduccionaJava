@@ -5,9 +5,10 @@
 package EjercicioExtra6;
 
 public class Rectangulo1 {
-    private final int lado1;
-    private final int lado2;
+    private final  int lado1;
+    private  int lado2;
 
+   
     public Rectangulo1(int lado1, int lado2) {
         this.lado1 = lado1;
         this.lado2 = lado2;
