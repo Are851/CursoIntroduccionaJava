@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Ejercicio4RectanguloConGetySet;
+package Ejercicio4CRectangulo;
 
 
 public class MainRectangulo {

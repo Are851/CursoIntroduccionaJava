@@ -1,5 +1,5 @@
 
-package Ejercicio4RectanguloConGetySet;
+package Ejercicio4CRectangulo;
 
 
 public class Ejercicio4Rectangulo {

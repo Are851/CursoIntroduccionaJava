@@ -1,16 +1,18 @@
-///Crea una clase "Cuenta" que tenga atributos como "saldo" y "titular". 
-///Luego, crea un método "retirar_dinero" que permita retirar una cantidad 
-///de dinero del saldo de la cuenta. Asegúrate de que el saldo nunca sea 
-///negativo después de realizar una transacción de retiro.
-package EjercicioExtra4;
+
+package EjercicioExtra4C;
 
 public class Cuenta {
-    private final String titular;
+        private final String titular;
     private double saldo;
+
 
     public Cuenta(String titular, double saldo) {
         this.titular = titular;
         this.saldo = saldo;
+    }
+
+    Cuenta() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getTitular() {
@@ -21,15 +23,17 @@ public class Cuenta {
         return saldo;
     }
 
-    public double retirarDinero(double cantidad) {
+    public void retirarDinero(double cantidad) {
         if (cantidad > saldo) {
             System.out.println("No tienes suficiente saldo para realizar esta operación.");
         } else {
             saldo -= cantidad;
             System.out.println("Has retirado " + cantidad + " euros. Tu nuevo saldo es " + saldo + " euros.");
         }
-        double retirarDinero = 0;
-        return retirarDinero;
+    }
+
+    void retirarDinero() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
 
