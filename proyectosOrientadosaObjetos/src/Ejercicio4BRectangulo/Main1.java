@@ -10,6 +10,8 @@ package Ejercicio4BRectangulo;
 
 package Rectangulo;
 
+import Ejercicio4CRectangulo.Rectangulo;
+
 public class Main1 {
     public static void main(String[] args) {
         Rectangulo r1 = new Rectangulo();

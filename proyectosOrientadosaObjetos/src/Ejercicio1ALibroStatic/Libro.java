@@ -16,17 +16,17 @@ public class Libro {
     private String titulo;
     private String autor;
     private int nroPag;
-
+///Constructor vacio
     public Libro() {
     }
-
+///Constructor con parametros
     public Libro(int isbn, String titulo, String autor, int nroPag) {
         this.isbn = isbn;
         this.titulo = titulo;
         this.autor = autor;
         this.nroPag = nroPag;
     }
-    
+    ///metodo para caragar datos
     public static void cargarLibro(Libro ingreso) {
         
         Scanner leer = new Scanner(System.in);    
@@ -44,7 +44,7 @@ public class Libro {
         ingreso.setNroPag(leer.nextInt());
         
     }
-
+///
     public static void mostrarLibro(Libro ingreso) {
         
         System.out.println(ingreso);

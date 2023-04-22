@@ -9,7 +9,7 @@ import EjercicioExtra5A.Empleado;
 import java.util.Scanner;
 
 
-public class Guia7EjercicioExtra05 {
+public class MainEmpleado {
 
   
     public static void main(String[] args) {
