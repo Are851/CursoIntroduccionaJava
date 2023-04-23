@@ -1,7 +1,7 @@
 
-package Servicios;
+package ServiciosEjercicio2;
 
-import Entidades.Cafetera;
+import EntidadesEjercicio2.Cafetera;
 import java.util.Scanner;
 
 public class CafeteraServicio1 {

@@ -6,10 +6,10 @@ la cafetera. Los resultados de cada operación se imprimirán en la consola.
 Le cargamos los datos en el main por codigo y no ejecutandolo
 Agregamos opciones de los metodos por while y swicth
 */ 
-package Mainejercicio2;
+package MaineEjercicio2;
 import java.util.Scanner;
-import Entidades.Cafetera;
-import Servicios.CafeteraServicio1;
+import EntidadesEjercicio2.Cafetera;
+import ServiciosEjercicio2.CafeteraServicio1;
 
 public class Main1 {
 

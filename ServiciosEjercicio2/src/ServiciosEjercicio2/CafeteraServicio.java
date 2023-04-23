@@ -13,7 +13,7 @@ taza,y de no haberse llenado en cuanto quedó la taza.
 c)Método vaciarCafetera():pone la cantidad de café actual en cero. 
 d)Método agregarCafe(int):se le pide al usuario una cantidad de café, el 
 método lorecibe y se añade a la cafetera la cantidad de café indicada.*/
-package Servicios;
+package ServiciosEjercicio2;
 
 import Entidades.Cafetera;
 import java.util.Scanner;

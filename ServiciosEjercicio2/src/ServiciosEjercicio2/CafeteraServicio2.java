@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Servicios;
+package ServiciosEjercicio2;
 
-import Entidades.Cafetera;
+import EntidadesEjercicio2.Cafetera;
 
 public class CafeteraServicio2 {
     private Cafetera cafetera;

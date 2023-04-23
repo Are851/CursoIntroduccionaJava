@@ -1,8 +1,8 @@
 
-package Mainejercicio2;
+package MaineEjercicio2;
 
 import java.util.Scanner;
-import Servicios.CafeteraServicio2;
+import ServiciosEjercicio2.CafeteraServicio2;
 
 public class Main2 {
     public static void main(String[] args) {

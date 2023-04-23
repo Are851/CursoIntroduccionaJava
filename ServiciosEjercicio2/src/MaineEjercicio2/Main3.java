@@ -2,9 +2,9 @@
 Hacemos el main sin menu pero pidiendo capacidad maxima y cantidad de cafe a 
 agregar
  */
-package Mainejercicio2;
+package MaineEjercicio2;
 
-import Servicios.CafeteraServicio2;
+import ServiciosEjercicio2.CafeteraServicio2;
 import java.util.Scanner;
 
 
