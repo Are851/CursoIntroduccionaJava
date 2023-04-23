@@ -44,6 +44,11 @@ public class Cafetera {
     public void setCantidadActual(int cantidadActual) {
         this.cantidadActual = cantidadActual;
     }
+
+    @Override
+    public String toString() {
+        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     

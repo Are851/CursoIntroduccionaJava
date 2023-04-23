@@ -10,23 +10,51 @@ el tamaño de la taza y simulala acción de servir la taza con la capacidad
 indicada.Si la cantidad actual de café “no alcanza” para llenar la taza,
 se sirve lo que quede. El método le informará al usuario si se llenó o no la 
 taza,y de no haberse llenado en cuanto quedó la taza. 
-c)Método vaciar Cafetera():pone la cantidad de café actual en cero. 
-d)Método agregar Cafe(int):se le pide al usuario una cantidad de café, el 
-método lorecibe y se añade a la cafetera la cantidad de café indicada.
-package serviciosejercicio2;*/
+c)Método vaciarCafetera():pone la cantidad de café actual en cero. 
+d)Método agregarCafe(int):se le pide al usuario una cantidad de café, el 
+método lorecibe y se añade a la cafetera la cantidad de café indicada.*/
 package Serviciosejercicio2;
 
+import Entidadesejercicio2.Cafetera;
 import java.util.Scanner;
 
 public class CafeteraServicio {
     Scanner read = new Scanner(System.in);
-    CuentaBancaria cuenta = new CuentaBancaria();
-
-    public CafeteraServicio(cantidadActual);{
-    int capacidadmaxima;
-    cantidadActual=capacidadmaxima;
-    return capacidadmaxima;
+    Cafetera cafe = new Cafetera();
+    int tazavacia;
+    
+    public llenarCafetera(int);{
+    cafe.setCapacidadMáxima(read.nextInt());
+    cafe.SetCantidadActual()=cafe.setCapacidadMáxima();
+       }
+     
+    public servirTaza(int) {
+    System.out.println("Ingrese tamaño de taza: ");
+    tazavacia (read.nextInt());
+    If (tazavacia<=cafe.getCantidadActual()); {
+    tazavacia-=cafe.getCantidadActual();
+    break
+    else
+    tazavacia=cafe.getCantidadActual()
     }
+      }
+    public  vaciarCafetera(); {
+    cafe.SetCantidadActual()=0;
+              }
+    public agregarCafe(int);{
+    int cafeagregado;
+    cafe.setCantidadActual(cafe.getCantidadActual()+ cafeagregado);
+    }
+            
+    }
+    
+        
+        
+             }
+    }
+    
+    
+
     
  
             
