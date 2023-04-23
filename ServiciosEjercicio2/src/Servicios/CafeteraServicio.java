@@ -13,21 +13,24 @@ taza,y de no haberse llenado en cuanto quedó la taza.
 c)Método vaciarCafetera():pone la cantidad de café actual en cero. 
 d)Método agregarCafe(int):se le pide al usuario una cantidad de café, el 
 método lorecibe y se añade a la cafetera la cantidad de café indicada.*/
-package Serviciosejercicio2;
+package Servicios;
 
-import Entidadesejercicio2.Cafetera;
+import Entidades.Cafetera;
 import java.util.Scanner;
 
 public class CafeteraServicio {
     Scanner read = new Scanner(System.in);
     Cafetera cafe = new Cafetera();
     int tazavacia;
-    
-    public llenarCafetera(int);{
+   
+    public llenarCafetera();{
     cafe.setCapacidadMáxima(read.nextInt());
     cafe.SetCantidadActual()=cafe.setCapacidadMáxima();
        }
-     
+    public void llenarCafetera() {
+        cafetera.setCantidadActual(cafetera.getCapacidadMaxima());
+    }
+    
     public servirTaza(int) {
     System.out.println("Ingrese tamaño de taza: ");
     tazavacia (read.nextInt());
@@ -50,12 +53,11 @@ public class CafeteraServicio {
     
         
         
-             }
-    }
+         
     
     
 
     
  
             
-}
+

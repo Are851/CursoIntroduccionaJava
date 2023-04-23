@@ -15,30 +15,30 @@ d)Método agregar Cafe(int):se le pide al usuario una cantidad de café, el
 método lo recibe y se añade a la cafetera la cantidad de café indicada.
 package serviciosejercicio2;*/
 
-package Entidadesejercicio2;
+package Entidades;
 
 public class Cafetera {
-    int capacidadMáxima;
-    int cantidadActual;
+    private int capacidadMaxima;
+    private int cantidadActual;
 
     public Cafetera() {
     }
 
-    public Cafetera(int capacidadMáxima, int cantidadActual) {
-        this.capacidadMáxima = capacidadMáxima;
+    public Cafetera(int capacidadMaxima, int cantidadActual) {
+        this.capacidadMaxima = capacidadMaxima;
         this.cantidadActual = cantidadActual;
     }
 
-    public int getCapacidadMáxima() {
-        return capacidadMáxima;
+    public int getCapacidadMaxima() {
+        return capacidadMaxima;
     }
 
     public int getCantidadActual() {
         return cantidadActual;
     }
 
-    public void setCapacidadMáxima(int capacidadMáxima) {
-        this.capacidadMáxima = capacidadMáxima;
+    public void setCapacidadMaxima(int capacidadMaxima) {
+        this.capacidadMaxima = capacidadMaxima;
     }
 
     public void setCantidadActual(int cantidadActual) {
@@ -47,10 +47,10 @@ public class Cafetera {
 
     @Override
     public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+        return "Cafetera{" + "capacidadMaxima=" + capacidadMaxima + ", cantidadActual=" + cantidadActual + '}';
     }
-    
-    
+
+
     
     
 }
