@@ -18,8 +18,7 @@ package serviciosejercicio2;*/
 package EntidadesEjercicio2;
 
 public class Cafetera {
-    private int capacidadMaxima;
-    private int cantidadActual;
+    private int capacidadMaxima, cantidadActual;
 
     public Cafetera() {
     }
