@@ -1,4 +1,4 @@
-package MaineEjercicio2;
+package MainEjercicio2;
 
 import EntidadesEjercicio2.Cafetera2;
 import ServiciosEjercicio2.CafeteraServicio3;

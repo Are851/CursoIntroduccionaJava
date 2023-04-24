@@ -1,5 +1,5 @@
 
-package MaineEjercicio2;
+package MainEjercicio2;
 
 import java.util.Scanner;
 import ServiciosEjercicio2.CafeteraServicio2;
