@@ -15,5 +15,8 @@ package Main;
 import javax.swing.JOptionPane;
 public class Main {
 JOptionPane.showMessageDialog(null, "Este es un mensaje de ejemplo.", "Título del mensaje", JOptionPane.INFORMATION_MESSAGE);
-  
+public static void main(String[] args) {
+       
+    }
+ 
 }

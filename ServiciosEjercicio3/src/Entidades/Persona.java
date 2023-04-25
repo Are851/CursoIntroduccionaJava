@@ -38,6 +38,7 @@ public class Persona {
     private int edad, peso, altura;
     private int SetEdad;
     
+    
     public Persona(String nombre, String sexo, int edad, int peso, int altura) {
         this.nombre = nombre;
         this.sexo = sexo;

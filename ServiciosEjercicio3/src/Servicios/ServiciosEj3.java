@@ -39,9 +39,9 @@ import java.util.Scanner;
         
 public class ServiciosEj3 {
     Scanner leer = new Scanner(System.in);
-    Persona pers = Persona(edad);   
+    Persona pers =new  Persona();   
     
-    public void esMayorDeEdad(Persona pers);{
+    public void esMayorDeEdad(Persona pers){
     System.out.println("Ingrese Edad :" );
     pers.setEdad (leer.nextInt());
     if (pers.getEdad()>=21){
@@ -76,7 +76,7 @@ public class ServiciosEj3 {
     break;
     }
      }
-Método calcularIMC(Persona pers);{
+public void calcularIMC(Persona pers){
         /*. Si esta fórmula da por resultado un valor menor que
         20, significa que la persona está por debajo de su peso ideal y la función
         devuelve un -1. Si la fórmula da por resultado un número entre 20 y 25
@@ -84,11 +84,12 @@ Método calcularIMC(Persona pers);{
         devuelve un 0. Finalmente, si el resultado de la fórmula es un valor mayor
         que 25 significa que la persona tiene sobrepeso, y la función devuelve un 1.*/
     int imc = (int) (pers.getPeso()/Math.pow(pers.getAltura(), 2));
-    if (int imc < 20 );{
+    if ( imc < 20 ){
     int pesoideal= -1; }
-    if ((int imc>=20) |  (imc < 25));{
-    int pesoideal= O; }
-    if ((int imc>=20) |  (imc < 25));{
-    int pesoideal= 1; }
+    else if (( imc>=20) ||  (imc < 25)){
+    int pesoideal= 0; }
+    else{
+    int pesoideal= 1; } 
 }}
+
 
