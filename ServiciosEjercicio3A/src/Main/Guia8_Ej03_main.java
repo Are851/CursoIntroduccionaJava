@@ -33,7 +33,7 @@ unos métodos adicionales.
  */
 package guia8_ej03_main;
 
-import Servicios.PersonaServicio1;
+import Servicios.PersonaServicio;
 import java.util.Scanner;
 
 public class Guia8_Ej03_main {
@@ -45,11 +45,11 @@ public class Guia8_Ej03_main {
         System.out.print("Cuántas personas desea cargar? ");
         int cantidad = read.nextInt();
         //instanciar el array de objetos
-        PersonaServicio1 sujeto[] = new PersonaServicio1[cantidad];
+        PersonaServicio sujeto[] = new PersonaServicio[cantidad];
         //crear los objetos y guardarlos en el array instanciado
         for (int i = 0; i < cantidad; i++) {
             System.out.println((i+1) + "° persona");
-            PersonaServicio1 j = new PersonaServicio1();
+            PersonaServicio j = new PersonaServicio();
             j.crearPersona();
             sujeto[i]=j;
         }

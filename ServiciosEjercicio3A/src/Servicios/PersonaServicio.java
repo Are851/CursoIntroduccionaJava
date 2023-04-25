@@ -16,18 +16,20 @@ que la persona tiene sobrepeso, y la función devuelve un 1.
  */
 package Servicios;
 
-import Entidades.Persona1;
+import Entidades.Persona;
 import java.util.Scanner;
 
-public class PersonaServicio1 {
+public class PersonaServicio {
     Scanner read = new Scanner(System.in);
     //instancio el objeto
-    Persona1 individuo;
+    Persona individuo;
     
     //a) Método esMayorDeEdad(): indica si la persona es mayor de edad. 
     //La función devuelve un booleano.
     public boolean esMayorDeEdad(){
-        return individuo.getEdad() >= 18;
+        if (individuo.getEdad() < 18) {
+            return false;
+        } else {return true;}
     }
 
     //b) Metodo crearPersona(): el método crear persona, le pide los valores 
@@ -46,7 +48,7 @@ public class PersonaServicio1 {
             //comprueba que el sexo introducido sea correcto, es decir, H, M o O. 
             //Si no es correcto se deberá mostrar un mensaje.
             if ("h".equals(sexo) || "m".equals(sexo) || "o".equals(sexo)) {
-                 sexo = sexo;
+                sexo = sexo;
             } else {
                 System.out.println("Error. No se pudo cargar el sexo. Valor incorrecto");
                 sexo = "";
@@ -61,7 +63,7 @@ public class PersonaServicio1 {
             String ojo = read.next();
             //cargo los datos en el objeto instanciado al inicio
             //con el constructor por parámetro
-            individuo = new Persona1(nombre,nacion,edad,sexo,peso,altura,pelo,ojo);    
+            individuo = new Persona(nombre,nacion,edad,sexo,peso,altura,pelo,ojo);    
     }
     
     /*

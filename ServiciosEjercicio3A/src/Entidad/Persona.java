@@ -6,7 +6,7 @@ hacerlo. Agregar constructores, getters y setters.
  */
 package Entidades;
 
-public class Persona1 {
+public class Persona {
     /*
     atributos: nombre, edad, sexo (‘H’ para hombre, ‘M’ para mujer, 
     ‘O’ para otro), peso y altura. Si desea añadir algún otro atributo, puede 
@@ -22,9 +22,9 @@ public class Persona1 {
     private String colorOjos;
     
     //constructores
-    public Persona1() {}   
+    public Persona() {}   
 
-    public Persona1(String nombre, String nacionalidad, int edad, String sexo, 
+    public Persona(String nombre, String nacionalidad, int edad, String sexo, 
             float peso, float altura, String colorPelo, String colorOjos) {
         this.nombre = nombre;
         this.nacionalidad = nacionalidad;

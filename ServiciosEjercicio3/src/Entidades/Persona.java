@@ -35,8 +35,8 @@ package Entidades;
 
 public class Persona {
     private String nombre, sexo;
-    private int edad, peso, altura;
-    private int SetEdad;
+    private int edad, peso;
+    private double altura;
     
     
     public Persona(String nombre, String sexo, int edad, int peso, int altura) {
