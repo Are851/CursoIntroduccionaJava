@@ -1,8 +1,7 @@
 /*
-Hacemos el main sin menu pero pidiendo capacidad maxima y cantidad de cafe a 
-agregar
+Sin Swicht con opciones de los metodos
  */
-package MainEjercicio2;
+package Main;
 
 import ServiciosEjercicio2.CafeteraServicio2;
 import java.util.Scanner;

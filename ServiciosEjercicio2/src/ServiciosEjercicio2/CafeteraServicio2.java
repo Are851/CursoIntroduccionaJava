@@ -5,7 +5,7 @@
  */
 package ServiciosEjercicio2;
 
-import EntidadesEjercicio2.Cafetera;
+import Entidad.Cafetera;
 
 public class CafeteraServicio2 {
     private Cafetera cafetera;

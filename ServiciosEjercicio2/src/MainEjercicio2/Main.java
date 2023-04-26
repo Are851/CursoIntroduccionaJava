@@ -3,10 +3,11 @@ y cantidad actual de 250 unidades de café. Luego, utiliza la instancia de
 CafeteraServicio para realizar algunas operaciones, como llenar la cafetera, 
 servir una taza de 100 unidades de café, agregar 200 unidades de café y vaciar
 la cafetera. Los resultados de cada operación se imprimirán en la consola.
-Le cargamos los datos en el main por codigo y no ejecutandolo*/
+Le cargamos los datos en el main por codigo y no ejecutandolo
+Sin switch y cargando parametros sin scanner*/
 package MainEjercicio2;
 
-import EntidadesEjercicio2.Cafetera;
+import Entidad.Cafetera;
 import ServiciosEjercicio2.CafeteraServicio1;
 
 public class Main {

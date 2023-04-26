@@ -4,11 +4,11 @@ CafeteraServicio para realizar algunas operaciones, como llenar la cafetera,
 servir una taza de 100 unidades de café, agregar 200 unidades de café y vaciar
 la cafetera. Los resultados de cada operación se imprimirán en la consola.
 Le cargamos los datos en el main por codigo y no ejecutandolo
-Agregamos opciones de los metodos por while y swicth
+Agregamos opciones de los metodos por while y switch
 */ 
 package MainEjercicio2;
 import java.util.Scanner;
-import EntidadesEjercicio2.Cafetera;
+import Entidad.Cafetera;
 import ServiciosEjercicio2.CafeteraServicio1;
 
 public class Main1 {

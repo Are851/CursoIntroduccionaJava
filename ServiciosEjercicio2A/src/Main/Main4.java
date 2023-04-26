@@ -1,6 +1,6 @@
 package MainEjercicio2;
 
-import EntidadesEjercicio2.Cafetera2;
+import Entidad.Cafetera2;
 import ServiciosEjercicio2.CafeteraServicio3;
 
 import java.util.Scanner;

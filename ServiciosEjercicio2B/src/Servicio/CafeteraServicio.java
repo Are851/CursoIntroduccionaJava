@@ -15,49 +15,38 @@ d)Método agregarCafe(int):se le pide al usuario una cantidad de café, el
 método lorecibe y se añade a la cafetera la cantidad de café indicada.*/
 package ServiciosEjercicio2;
 
-import Entidades.Cafetera;
+import Entidad.Cafetera;
 import java.util.Scanner;
 
 public class CafeteraServicio {
+
+    private Cafetera cafe;
     Scanner read = new Scanner(System.in);
     Cafetera cafe = new Cafetera();
-    int tazavacia;
-   
-    public llenarCafetera();{
-    cafe.setCapacidadMáxima(read.nextInt());
-    cafe.SetCantidadActual()=cafe.setCapacidadMáxima();
-       }
+    private Cafetera cafetera;
+    Scanner scanner = new Scanner(System.in);
+    int cantidad = 0;
+
     public void llenarCafetera() {
-        cafetera.setCantidadActual(cafetera.getCapacidadMaxima());
+        cafe.setCapacidadMaxima(read.nextInt());
+        cafe.setCantidadActual(cafe.getCapacidadMaxima());
     }
-    
-    public servirTaza(int) {
-    System.out.println("Ingrese tamaño de taza: ");
-    tazavacia (read.nextInt());
-    If (tazavacia<=cafe.getCantidadActual()); {
-    tazavacia-=cafe.getCantidadActual();
-    break
-    else
-    tazavacia=cafe.getCantidadActual()
+
+    public void servirTaza() {
+        System.out.println("Ingrese tamaño de taza: ");
+        int tamañotaza (read.nextInt()
+        );
+        if (tamañotaza <= cafe.getCapacidadMaxima()) {
+            tazavacia -= cafe.getCantidadActual();
+        } else {
+            tazavacia = (cafe.getCantidadActual());
+        }
     }
-      }
-    public  vaciarCafetera(); {
-    cafe.SetCantidadActual()=0;
+}
+public void  vaciarCafetera() {
+    cafe.SetCantidadActual()=0
               }
-    public agregarCafe(int);{
-    int cafeagregado;
-    cafe.setCantidadActual(cafe.getCantidadActual()+ cafeagregado);
+    public void agregarCafe(){ 
+    int cafeagregado
+    cafe.setCantidadActual(cafe.getCantidadActual()+ cafeagregado)
     }
-            
-    }
-    
-        
-        
-         
-    
-    
-
-    
- 
-            
-

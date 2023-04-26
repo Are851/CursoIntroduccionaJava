@@ -1,12 +1,12 @@
 
 package ServiciosEjercicio2;
 
-import EntidadesEjercicio2.Cafetera;
+import Entidad.Cafetera;
 import java.util.Scanner;
 
 public class CafeteraServicio1 {
 
-    private Cafetera cafetera;
+    private  Cafetera cafetera;
     Scanner scanner = new Scanner(System.in);
     int cantidad = 0;
 
@@ -39,5 +39,4 @@ public class CafeteraServicio1 {
 
     }
 
-}    
-
+}

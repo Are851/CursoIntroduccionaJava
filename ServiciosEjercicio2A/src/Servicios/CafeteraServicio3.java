@@ -15,7 +15,7 @@ d) Método agregarCafe(int): se le pide al usuario una cantidad de café,
 el método lo recibe y se añade a la cafetera la cantidad de café
 indicada.
  */
-import EntidadesEjercicio2.Cafetera2;
+import Entidad.Cafetera2;
 
 public class CafeteraServicio3 {
     public void llenarCafetera(Cafetera2 caf) {

@@ -57,6 +57,8 @@ public class ServiciosEj3 {
     pers.setPeso(leer.nextInt());
     System.out.println("Ingrese altura");
     pers.setAltura(leer.nextInt());
+    boolean opcionValida = false;
+    while (!opcionValida){
     System.out.println("Ingrese sexo");
     int opcion = leer.nextInt();
     System.out.print("\nSeleccione sexo: ");
@@ -74,7 +76,10 @@ public class ServiciosEj3 {
     case 3:
     pers.setSexo("O");
     break;
-    }
+    default:
+    System.out.print ("Opción inválida. Intente de nuevo.");
+    break;
+    } }
      }
 public void calcularIMC(Persona pers){
         /*. Si esta fórmula da por resultado un valor menor que

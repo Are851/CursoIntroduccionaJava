@@ -15,7 +15,7 @@ d)Método agregar Cafe(int):se le pide al usuario una cantidad de café, el
 método lo recibe y se añade a la cafetera la cantidad de café indicada.
 package serviciosejercicio2;*/
 
-package EntidadesEjercicio2;
+package Entidad;
 
 public class Cafetera {
     private int capacidadMaxima, cantidadActual;
@@ -48,7 +48,7 @@ public class Cafetera {
     public String toString() {
         return "Cafetera{" + "capacidadMaxima=" + capacidadMaxima + ", cantidadActual=" + cantidadActual + '}';
     }
-
+    
 
     
     

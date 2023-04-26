@@ -3,10 +3,8 @@ package Servicios;
 
 import java.util.Scanner;
 import Entidades.Persona;
-public class PersonaServicio2 {
-
-
-public class PersonaServicio {
+public class PersonaServicio
+{
 
     public boolean esMayorDeEdad(Persona persona) {
         return persona.getEdad() >= 18;
@@ -51,4 +49,4 @@ public class PersonaServicio {
         }
     }
 }    
-}
+
