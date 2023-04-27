@@ -22,8 +22,6 @@ public class CafeteraServicio {
 
     private Cafetera cafe;
     Scanner read = new Scanner(System.in);
-    Cafetera cafe = new Cafetera();
-    private Cafetera cafetera;
     Scanner scanner = new Scanner(System.in);
     int cantidad = 0;
 
@@ -32,16 +30,17 @@ public class CafeteraServicio {
         cafe.setCantidadActual(cafe.getCapacidadMaxima());
     }
 
-    public void servirTaza() {
+    public void servirTaza((int tamanoTaza) {
         System.out.println("Ingrese tamaño de taza: ");
-        int tamañotaza (read.nextInt()
-        );
-        if (tamañotaza <= cafe.getCapacidadMaxima()) {
-            tazavacia -= cafe.getCantidadActual();
-        } else {
-            tazavacia = (cafe.getCantidadActual());
+        int tamanoTaza=0;
+        int tamanoTaza =(read.nextInt());
+        if (tamanoTaza <= cafe.getCapacidadMaxima()) {
+            cafe.setCantidadActual(cafe.getCantidadActual() - tamanoTaza);
         }
-    }
+         else {
+        System.out.println("No se ha llenado la taza. Se carga a la taza " + cafe.getCantidadActual() + " unidades de cafe en la taza.");
+            cafe.setCantidadActual(0);        }
+        }
 }
 public void  vaciarCafetera() {
     cafe.SetCantidadActual()=0
