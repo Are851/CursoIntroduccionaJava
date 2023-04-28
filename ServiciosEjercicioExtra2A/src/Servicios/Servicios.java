@@ -16,7 +16,7 @@ public char crearNif(NIF nif){
     String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
     return letras.charAt(posicióndni); 
     
-public void mostrar(){
+public void mostrar(NIF nif)){
     System.out.println(nif.getDni()+crearNif(nif));
     }
 }
