@@ -7,14 +7,16 @@ public class Servicios {
     Scanner scanner = new Scanner(System.in);
 
 
-public void crearNif(){
+
+
+public char crearNif(NIF nif){
     System.out.println("Ingrese el DNI con 8 cifras ");
-    int dni = scanner.nextInt();
-    int posicióndni = dni % 23;
+    nif.setDni(scanner.nextInt());
+    int posicióndni = nif.getDni() % 23;
     String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
-    nif.setLetra(letras.charAt(posicióndni));   
-}
+    return letras.charAt(posicióndni); 
+    
 public void mostrar(){
-    System.out.println(nif.getDni()+nif.getLetra());
+    System.out.println(nif.getDni()+crearNif(nif));
     }
 }
