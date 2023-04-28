@@ -1,5 +1,6 @@
 package Main;
 import Entidad.NIF;
+import Entidad.NIF;
 import Service.ServiceNIF;
 
 public class MainNIF {
