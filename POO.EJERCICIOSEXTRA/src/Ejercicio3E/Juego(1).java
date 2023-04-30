@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package poo1.objetos;
+package Ejercicio3E;
 
 import java.util.Scanner;
 

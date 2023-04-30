@@ -1,7 +1,7 @@
 
 package EjercicioExtra3D;
 
-import poo1.objetos.Juego;
+import Ejercicio3E.Juego;
 
 
 public class MainConObjeto {
