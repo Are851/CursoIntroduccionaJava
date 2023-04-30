@@ -17,7 +17,7 @@ segundo jugador adivina el número o se queda sin intentos. Registra el número
 de intentos necesarios para adivinar el número y el número de veces que cada 
 jugador ha ganado.  */
 
-public class Juego {
+public class Juego1 {
     
     private int j1;
     private int j2;
@@ -27,10 +27,10 @@ public class Juego {
     private boolean ju2 = false;
     private boolean ju1 = !ju2;
 
-    public Juego() {
+    public Juego1() {
     }
 
-    public Juego(int j1, int Int, String nom1, String nom2) {
+    public Juego1(int j1, int Int, String nom1, String nom2) {
         this.j1 = j1;
         this.Int = Int;
         this.nom1=nom1;
