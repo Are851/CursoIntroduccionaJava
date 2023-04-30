@@ -1,15 +1,6 @@
 package Entidad;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author flavia
- */
 public class NIF {
     /* 
        Dígito Verificador. Crear una clase NIF que se usará para mantener DNIs con su correspondiente letra (NIF). 
@@ -43,4 +34,4 @@ public class NIF {
     }
     
 }    
-}
+

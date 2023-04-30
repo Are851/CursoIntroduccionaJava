@@ -19,6 +19,19 @@ Scanner scanner = new Scanner(System.in);
     }
 
     public void mostrar(NIF nif) {
-        System.out.println(String.format("%08d", nif.getDni()) + "-" + nif.getLetra());
+        System.out.println(String.format("%08d", nif.getDni()) + "-" 
+                + nif.getLetra());
+//El método nif.getDni() devuelve un valor entero (int), que luego es formateado
+//como una cadena de caracteres con String.format().
+//
+//Específicamente, se está utilizando la cadena de formato "%08d", que indica
+//que se debe formatear un valor entero (d de decimal) con 8 dígitos, rellenando
+//con ceros (0) a la izquierda si el número no tiene 8 dígitos.
+//
+//Entonces, el valor devuelto por nif.getDni() se está formateando como una 
+//cadena de 8 caracteres con ceros a la izquierda si es necesario, para que 
+//siempre tenga una longitud de 8 caracteres. Luego, se concatena un guion ("-") 
+//y la letra correspondiente del NIF (nif.getLetra()), para obtener la cadena 
+//        final que representa el NIF en el formato deseado.
     }   
 }
