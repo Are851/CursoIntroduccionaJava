@@ -46,8 +46,9 @@ public class Persona {
     public int getEdad() {return edad;}
     public void setEdad(int edad) {this.edad = edad;}
 
-    public String getSexo() {return sexo;}
-    public void setSexo(String sexo) {this.sexo = sexo;}
+    public String getSexo() {
+        return sexo;
+    }
 
     public float getPeso() {return peso;}
     public void setPeso(float peso) {this.peso = peso;}
@@ -60,6 +61,15 @@ public class Persona {
 
     public String getColorOjos() {return colorOjos;}
     public void setColorOjos(String colorOjos) {this.colorOjos = colorOjos;}   
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+    }
 
     
 }

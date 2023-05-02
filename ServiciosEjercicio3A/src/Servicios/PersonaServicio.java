@@ -87,11 +87,5 @@ public class PersonaServicio {
         }
     }
 
-    @Override
-    public String toString() {
-        return  individuo.getNombre() + ", " + individuo.getNacionalidad() 
-                + " de " + individuo.getEdad() + " años, " + individuo.getPeso() 
-                + "kg., " + individuo.getAltura() + "mts., de cabello " 
-                + individuo.getColorPelo() + " y ojos " + individuo.getColorOjos();
-    }
+    
 }

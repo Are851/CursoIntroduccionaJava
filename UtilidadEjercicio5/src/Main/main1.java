@@ -9,17 +9,14 @@ import Entidad.Persona;
 import Servicios.PersonaService;
 import java.util.Date;
 import java.util.Scanner;
-/**
- *
- * @author flavia
- */
+
 public class main1 {
 
 
     public static void main(String[] args) {
         PersonaService personaService = new PersonaService();
-        
         Scanner scanner = new Scanner(System.in);
+
 
         // Pedimos el nombre de la persona
         System.out.print("Ingrese el nombre de la persona: ");
