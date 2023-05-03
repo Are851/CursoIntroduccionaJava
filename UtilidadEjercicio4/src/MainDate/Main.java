@@ -1,7 +1,7 @@
 
 package MainDate;
 
-import servicios.ServiciosDate;
+import Servicios.ServiciosDate;
 import java.util.Date;
 
 public class Main {

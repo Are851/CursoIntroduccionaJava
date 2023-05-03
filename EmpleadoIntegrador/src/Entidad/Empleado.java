@@ -19,42 +19,32 @@ Objeto nombreVector[] = new Objeto[];
  */
 package Entidad;
 
-
 public class Empleado {
-    private double salario;
-    private String nombre;
 
-    public Empleado(int salario) {
-        this.salario = salario;
-    }
+    private String nombre;
+    private double salario;
 
     public Empleado() {
     }
 
-    public Empleado(String nombre) {
+    public Empleado(String nombre, double salario) {
         this.nombre = nombre;
-    }
-    
-    public Empleado(double salario, String nombre) {
-        this.salario = salario;
-        this.nombre = nombre;
-    }
-
-   
-    public double getSalario() {
-        return salario;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setSalario(double salario) {
         this.salario = salario;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
-}
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+

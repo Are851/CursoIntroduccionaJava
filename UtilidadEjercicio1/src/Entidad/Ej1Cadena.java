@@ -34,7 +34,7 @@ private int longitud;
 
     public Ej1Cadena(String frase) {
         this.frase = frase;
-        longitud=frase.length();
+        this.longitud=frase.length();
     
     }
 

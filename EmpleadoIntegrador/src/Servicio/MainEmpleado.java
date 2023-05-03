@@ -11,11 +11,12 @@ public class MainEmpleado {
 
         for (int i = 0; i < empleados.length; i++) {
             System.out.print("Ingrese nombre del empleado ");
-            String nombre = scanner.nextLine();
+            String nombre= scanner.nextLine();
 
             System.out.print("Ingrese el salario ");
-            double salario = scanner.nextDouble();
-            empleados[i] = new Empleado(salario, nombre);
+            double Salario=scanner.nextDouble();
+            
+            empleados[i] = new Empleado(nombre,salario);
         }
         double sumasalarios = 0;
         for (int i = 0; i < empleados.length; i++) {

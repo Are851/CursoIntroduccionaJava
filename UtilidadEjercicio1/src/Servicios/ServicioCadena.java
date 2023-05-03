@@ -55,7 +55,7 @@ public class ServicioCadena {
 //                contador++;
 //            }
 //        }
-//        System.out.println("La frase contiene " + contador + " vocales");
+//         System.out.println("La frase contiene " + contador + " vocales");
 //    }
     ///opcion1
     public String invertirFrase(Ej1Cadena cadena) {
