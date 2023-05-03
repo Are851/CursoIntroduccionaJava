@@ -68,11 +68,11 @@ public class Servicio {
 //    public void reemplazar(String letraareemplazar, String reemplazo) {
 //        System.out.println(texto.getFrase().replace(letraareemplazar, reemplazo));
 //    }
-    public void reemplazar(String fraseA) {
+    public void reemplazar(String letra2) {
         String fraseA = "";
         for (int i = 0; i < texto.getLongitud(); i++) {
             if (texto.getFrase().substring(i, i + 1).equalsIgnoreCase("a")) {
-                fraseA = fraseA.concat(letra)2;
+                fraseA = fraseA.concat(letra2);
             } else {
                 fraseA = fraseA.concat(texto.getFrase().substring(i, i + 1));
             }
