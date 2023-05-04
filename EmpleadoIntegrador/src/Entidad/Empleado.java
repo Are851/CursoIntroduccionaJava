@@ -47,4 +47,6 @@ public class Empleado {
     public double getSalario() {
         return salario;
     }
+      }
+    
 

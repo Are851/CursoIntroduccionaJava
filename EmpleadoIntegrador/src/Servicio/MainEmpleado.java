@@ -11,12 +11,13 @@ public class MainEmpleado {
 
         for (int i = 0; i < empleados.length; i++) {
             System.out.print("Ingrese nombre del empleado ");
-            String nombre= scanner.nextLine();
+            String nombre = scanner.nextLine();
 
             System.out.print("Ingrese el salario ");
-            double Salario=scanner.nextDouble();
-            
-            empleados[i] = new Empleado(nombre,salario);
+            double salario = scanner.nextDouble();
+            scanner.nextLine(); // Consumir salto de línea pendiente
+
+            empleados[i] = new Empleado(nombre, salario);
         }
         double sumasalarios = 0;
         for (int i = 0; i < empleados.length; i++) {
@@ -39,7 +40,7 @@ public class MainEmpleado {
                 nombresalariosmayores[contador] = empleados[i].getNombre();
                 contador++;
             }
-            
+
         }
         ///opcion2 for each 
 //        for (Empleado empleado : empleados) {

@@ -1,15 +1,13 @@
-
 package Entidad;
 
 public class ParDeNumeros {
-    
+
     private double num1, num2;
 
     public ParDeNumeros() {
-        num1= Math.round(Math.random()*10);
-        num2 = Math.round(Math.random()*10);
+        num1 = Math.round(Math.random() * 10);
+        num2 = Math.round(Math.random() * 10);
 
-        
     }
 
     public double getNum1() {
@@ -33,5 +31,4 @@ public class ParDeNumeros {
         return "ParDeNumeros{" + "num1=" + num1 + ", num2=" + num2 + '}';
     }
 
-}    
-
+}
