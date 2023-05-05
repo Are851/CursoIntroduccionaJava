@@ -26,7 +26,7 @@ public class Main {
         String nombre = "Juan";
         Date fechaNacimiento = new Date(95, 2, 23); // 23 de marzo de 1995
         Persona persona = personaService.crearPersona(nombre, fechaNacimiento);
-
+        ///cargamos los datos en el codigo
         // Mostramos la información de la persona
         personaService.mostrarPersona(persona);
 

@@ -10,9 +10,9 @@ import Servicios.PersonaService;
 import java.util.Date;
 import java.util.Scanner;
 
-public class main1 {
+public class main0 {
 
-
+///cargamos los datos en el main
     public static void main(String[] args) {
         PersonaService personaService = new PersonaService();
         Scanner scanner = new Scanner(System.in);

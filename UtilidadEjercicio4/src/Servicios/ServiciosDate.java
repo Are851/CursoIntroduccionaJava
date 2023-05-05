@@ -12,6 +12,7 @@ deañosentreunayotra(edaddelusuario).
  */
 package Servicios;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
@@ -31,7 +32,7 @@ public class ServiciosDate {
     ///excepción dentro del bloque try, se captura en uno o más bloques 
     ///catch que se definen inmediatamente después del bloque try.
             return FORMATO_FECHA.parse(fechaNacimientoStr);
-        } catch (Exception e) {
+        } catch (ParseException e) {
             System.out.println("Formato de fecha incorrecto. Inténtalo de nuevo.");
             return fechaNacimiento();
         }

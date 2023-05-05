@@ -36,10 +36,7 @@ public class PersonaService {
         System.out.println("Fecha nacimiento: " + persona.getFechaNacimiento().getDate() + "/" + persona.getFechaNacimiento().getMonth() + "/" + persona.getFechaNacimiento().getYear() );
     }
 
-    public void crearPersona(String nombre, int edad) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    
     
 
 }   
