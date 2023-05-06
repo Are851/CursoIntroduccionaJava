@@ -3,19 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package utilidadejextra2;
+package Main;
 
+import Entidad.Ahorcado;
+import Servicio.Servicio;
 /**
  *
  * @author flavia
  */
-public class UtilidadEjExtra2 {
-
-    /**
-     * @param args the command line arguments
-     */
+public class Main {
     public static void main(String[] args) {
-        // TODO code application logic here
+        Ahorcado ah=new Ahorcado();
+        Servicio serv=new Servicio();
+        serv.crearJuego(ah);
     }
-    
 }
