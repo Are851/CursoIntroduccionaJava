@@ -1,61 +1,73 @@
 package Entidad;
+
 public class Ahorcado {
-    private char[] palabra; // Vector con la palabra a buscar
-    private int letrasEncontradas; // Cantidad de letras encontradas
-    private int jugadasMaximas; // Cantidad máxima de jugadas permitidas
-    private int jugadasActuales; // Cantidad de jugadas realizadas
-    
-    public void setPalabra(String palabra) {
+    public char[] palabra;
+    private boolean[] encontradas;
+    private int cantidadMaximaJugadas;
+    private int intentos;
+
+    public void crearJuego(String palabra, int cantidadMaximaJugadas) {
         this.palabra = palabra.toCharArray();
-    }
-    
-    public void setJugadasMaximas(int jugadasMaximas) {
-        this.jugadasMaximas = jugadasMaximas;
-    }
-    
-    public void crearJuego(String palabra, int jugadasMaximas) {
-        setPalabra(palabra);
-        this.jugadasMaximas = jugadasMaximas;
-        this.letrasEncontradas = 0;
-        this.jugadasActuales = 0;
+        this.cantidadMaximaJugadas = cantidadMaximaJugadas;
+        this.encontradas = new boolean[palabra.length()];
+        this.intentos = cantidadMaximaJugadas;
     }
 
-    public int getLetrasEncontradas() {
-        return letrasEncontradas;
-    }
-
-    public void setLetrasEncontradas(int letrasEncontradas) {
-        this.letrasEncontradas = letrasEncontradas;
-    }
-    
     public int longitud() {
         return palabra.length;
     }
-    
+
     public boolean buscar(char letra) {
-        for (int i = 0; i < palabra.length; i++) {
-            if (palabra[i] == letra) {
-                return true;
-            }
-        }
-        jugadasActuales++;
-        return false;
-    }
-    
-    public boolean encontradas(char letra) {
         boolean encontrada = false;
         for (int i = 0; i < palabra.length; i++) {
             if (palabra[i] == letra) {
-                letrasEncontradas++;
                 encontrada = true;
+                encontradas[i] = true;
             }
         }
+        if (!encontrada) {
+            intentos--;
+        }
         return encontrada;
-        
-   
     }
-    
+
+    public boolean encontradas(char letra) {
+        boolean encontrada = false;
+        for (int i = 0; i < palabra.length; i++) {
+            if (palabra[i] == letra && !encontradas[i]) {
+                encontrada = true;
+                encontradas[i] = true;
+            }
+        }
+        if (!encontrada) {
+            intentos--;
+        }
+        return encontrada;
+    }
+
     public int intentos() {
-        return jugadasMaximas - jugadasActuales;
+        return intentos;
+    }
+
+    public int getLetrasEncontradas() {
+        int letrasEncontradas = 0;
+        for (int i = 0; i < encontradas.length; i++) {
+            if (encontradas[i]) {
+                letrasEncontradas++;
+            }
+        }
+        return letrasEncontradas;
+    }
+
+    public String mostrarPalabra() {
+        StringBuilder palabraMostrada = new StringBuilder();
+        for (int i = 0; i < palabra.length; i++) {
+            if (encontradas[i]) {
+                palabraMostrada.append(palabra[i]).append(" ");
+            } else {
+                palabraMostrada.append("* ");
+            }
+        }
+        return palabraMostrada.toString();
     }
 }

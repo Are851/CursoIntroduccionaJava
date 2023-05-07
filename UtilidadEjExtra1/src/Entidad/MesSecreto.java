@@ -8,7 +8,7 @@ public class MesSecreto {
     private String[] mes = {"enero", "febrero", "marzo", "abril", "mayo", 
         "junio", "julio", "agosto", "septiembre", "octubre", "noviembre",
         "diciembre"};
-    private String mesSecreto = mes[12];
+    public String mesSecreto = mes[12];
 
     public MesSecreto() {
     }

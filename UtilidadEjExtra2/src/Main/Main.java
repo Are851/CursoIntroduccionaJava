@@ -16,5 +16,6 @@ public class Main {
         Ahorcado ah=new Ahorcado();
         Servicio serv=new Servicio();
         serv.crearJuego(ah);
+        
     }
 }
