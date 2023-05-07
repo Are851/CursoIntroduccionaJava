@@ -33,10 +33,10 @@ public class Main {
 
     public static void main(String[] args) {
         Curso curs=new Curso();
-     ServicioCurso curso1 = new ServicioCurso();
-        
+        ServicioCurso curso1 = new ServicioCurso();
+        curso1.cargarAlumnos(curs);
         curso1.crearCurso(curs);
-        System.out.println("La ganacia semanal es: $" + curso1.calcularGananciaSemanal(curs));
+        System.out.println("La ganancia semanal es: $" + curso1.calcularGananciaSemanal(curs));
             
     }
     
