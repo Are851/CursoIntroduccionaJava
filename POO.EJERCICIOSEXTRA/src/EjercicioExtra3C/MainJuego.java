@@ -12,7 +12,9 @@ public class MainJuego {
         String conf ;
         
         do{
-            nuevo.iniciarJuego();
+            nuevo.inicioJuegoJ1();
+            nuevo.inicioJuegoJ2();
+
             
             System.out.println("Seguir jugando? S/N");
             conf = leer.next();
@@ -20,8 +22,8 @@ public class MainJuego {
         }while(!conf.equalsIgnoreCase("N"));
         
         
-        System.out.println("Partida ganadas Axel  : " + nuevo.ganador1);
-        System.out.println("Partidas ganadas Brian: " + nuevo.ganador2);
+        System.out.println("Partida ganadas Axel  : " + nuevo.getNom1());
+        System.out.println("Partidas ganadas Brian: " + nuevo.getNom2());
     }
     
 }

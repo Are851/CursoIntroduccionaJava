@@ -1,19 +1,20 @@
-
 package EjercicioExtra4C;
 
 public class Cuenta {
-        private final String titular;
+
+    private final String titular;
     private double saldo;
 
-
-    public Cuenta(String titular, double saldo) {
+    public Cuenta(String titular, double salﬁdo) {
         this.titular = titular;
         this.saldo = saldo;
     }
 
-    Cuenta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Cuenta() {
+        this.titular = null;
     }
+
+    
 
     public String getTitular() {
         return titular;
@@ -36,4 +37,3 @@ public class Cuenta {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
-

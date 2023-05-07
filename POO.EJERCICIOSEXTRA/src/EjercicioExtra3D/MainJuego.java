@@ -1,10 +1,8 @@
 
 package EjercicioExtra3D;
 
-import Ejercicio3E.Juego;
 
-
-public class MainConObjeto {
+public class MainJuego {
 /*En este Ejercicio llamamos a los metodos de la clase por medio del objeto*/
         
     

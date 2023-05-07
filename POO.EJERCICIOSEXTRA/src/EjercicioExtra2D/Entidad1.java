@@ -7,13 +7,13 @@ package EjercicioExtra2D;
 
 import java.util.Scanner;
 
-public class Entidad {
+public class Entidad1 {
       public double x1, y1, x2, y2;
 
-    public Entidad() {
+    public Entidad1() {
     }
 
-    public Entidad(double x1, double y1, double x2, double y2) {
+    public Entidad1(double x1, double y1, double x2, double y2) {
         this.x1 = x1;
         this.y1 = y1;
         this.x2 = x2;
@@ -58,5 +58,14 @@ public class Entidad {
         y2 = sc.nextDouble();
         sc.close();
     }   
+    public void CalcularDistancia(){
+      double distancia =  Math.sqrt(Math.pow((this.x2 - this.x1), 2) + Math.pow((this.y2 - this.y1), 2));
+         System.out.println("La distancia entre los puntos (" +this.x1 + "- " +this.y1 + ") y (" + this.x2 + "- " + this.y2 + ") es: " + distancia);
+
+            }
+
+  
+
+    
 } 
 

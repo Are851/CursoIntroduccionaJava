@@ -6,9 +6,8 @@ import Entidad.ArregloNumeros;
 import java.util.Arrays;
 
 
-/**
- */
-class  ArregloService {
+
+public class ArregloService {
     Random random = new Random();
 ///Llamamos a l Instancia dentro del metodo.
     public void inicializar(ArregloNumeros arreglo) {
