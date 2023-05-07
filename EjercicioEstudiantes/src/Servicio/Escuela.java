@@ -27,39 +27,79 @@ public class Escuela {
     }
 
     public double calcularPromedio() {
-        double sum = 0.0;
-        for (Estudiante estudiante : estudiantes) {
-            sum += estudiante.getNota();
-        }
-        return sum / estudiantes.length;
+    double sum = 0.0;
+    for (int i = 0; i < estudiantes.length; i++) {
+        sum += estudiantes[i].getNota();
+        ///Suma cada elemento del arreglo
+        /// estudiantes.length da el tamaño del arreglo
     }
-
-    public String[] obtenerNombresNotasMayoresAlPromedio() {
+    return sum / estudiantes.length;
+}
+    ///opcion 2 Se puede hacer con un for each tambien
+///For each se pone tipo de arreglo, luego el nombre que le damos al arreglo
+/// para llamarlo y luego el nombre del arreglo declarado.
+    
+//    public double calcularPromedio() {
+//        double sum = 0.0;
+//        for (Estudiante estudiante : estudiantes) {
+//            sum += estudiante.getNota();
+//        }
+//        return sum / estudiantes.length;ﬁ
+//    }
+    
+public String[] obtenerNombresNotasMayoresAlPromedio() {
         double promedio = calcularPromedio();
         int count = 0;
-        for (Estudiante estudiante : estudiantes) {
-            if (estudiante.getNota() > promedio) {
+    for (int i = 0; i < estudiantes.length; i++) {
+            if (estudiantes[i].getNota() > promedio) {
                 count++;
             }
         }
         String[] nombres = new String[count];
         int index = 0;
-        for (Estudiante estudiante : estudiantes) {
-            if (estudiante.getNota() > promedio) {
-                nombres[index] = estudiante.getNombre();
+    for (int i = 0; i < estudiantes.length; i++) {
+            if (estudiantes[i].getNota() > promedio) {
+                nombres[index] = estudiantes[i].getNombre();
                 index++;
             }
         }
         return nombres;
     }
+///opcion 2 con for each
+//    public String[] obtenerNombresNotasMayoresAlPromedio() {
+//        double promedio = calcularPromedio();
+//        int count = 0;
+//        for (Estudiante estudiante : estudiantes) {
+//            if (estudiante.getNota() > promedio) {
+//                count++;
+//            }
+//        }
+//        String[] nombres = new String[count];
+//        int index = 0;
+//        for (Estudiante estudiante : estudiantes) {
+//            if (estudiante.getNota() > promedio) {
+//                nombres[index] = estudiante.getNombre();
+//                index++;
+//            }
+//        }
+//        return nombres;
+//    }
 
-    public void mostrarEstudiantesNotasMayoresAlPromedio() {
+  public void mostrarEstudiantesNotasMayoresAlPromedio() {
         double promedio = calcularPromedio();
-        for (Estudiante estudiante : estudiantes) {
-            if (estudiante.getNota() > promedio) {
-                System.out.println(estudiante.getNombre() + " - " + estudiante.getNota());
+    for (int i = 0; i < estudiantes.length; i++) {
+            if (estudiantes[i].getNota() > promedio) {
+                System.out.println(estudiantes[i].getNombre() + " - " + estudiantes[i].getNota());
             }
         }
     }
+//    public void mostrarEstudiantesNotasMayoresAlPromedio() {
+//        double promedio = calcularPromedio();
+//        for (Estudiante estudiante : estudiantes) {
+//            if (estudiante.getNota() > promedio) {
+//                System.out.println(estudiante.getNombre() + " - " + estudiante.getNota());
+//            }
+//        }
+//    }
 }   
 
