@@ -1,12 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Ejercicio3E;
+package EjercicioExtra3E;
 
 import java.util.Scanner;
-
 /*
 Crea una clase "Juego" que tenga un método "iniciar_juego" que permita a
 dos jugadores jugar un juego de adivinanza de números. 
@@ -36,104 +30,61 @@ public class Juego1 {
         this.nom1=nom1;
         this.nom2=nom2;
     }
-/**
- * 
- * @param j1 
- */
+
     public void setJ1(int j1) {
         this.j1 = j1;
     }
-/**
- * 
- * @param j2 
- */
+
     public void setJ2(int j2) {
         this.j2 = j2;
     }
-/**
- * 
- * @param nom1 
- */
+
     public void setNom1(String nom1) {
         this.nom1 = nom1;
     }
-/**
- * 
- * @param nom2 
- */
+
     public void setNom2(String nom2) {
         this.nom2 = nom2;
     }
     
-/**
- * 
- * @param Int 
- */
+
     public void setInt(int Int) {
         this.Int = Int;
     }
     
-/**
- * 
- * @param ju2 
- */
     private void setJu2(boolean ju2) {
         this.ju2 = ju2;
     }
-/**
- * 
- * @param ju1 
- */
+
     private void setJu1(boolean ju1) {
         this.ju1 = !ju2;
     }
-/**
- * 
- * @return 
- */
+
     public int getJ1() {
         return j1;
     }
-/**
- * 
- * @return 
- */
+
     public int getJ2() {
         return j2;
     }
-/**
- * 
- * @return 
- */
+
     public String getNom1() {
         return nom1;
     }
-/**
- * 
- * @return 
- */
+
     public String getNom2() {
         return nom2;
     }
-/**
- * 
- * @return 
- */
+
     public int getInt() {
         return Int;
     }
     
-/**
- * 
- * @return 
- */
+
     public boolean isJu2() {
         return ju2;
     }
-/**
- * 
- * @return 
- */
+
     public boolean isJu1() {
         return ju1;
     }
@@ -167,7 +118,6 @@ public class Juego1 {
                System.out.println("\nFelicitaciones!!"+nom2+", has ganado en "+(contador-1)+" intentos");
                setJu2(true);
                
-           }
            
         }
        String ganador;
@@ -181,4 +131,4 @@ public class Juego1 {
        }
        System.out.println("Fin del juego, estos son los resultados:\nGanador: "+ganador+"\nPerdedor: "+perdedor);
     }
-}
+}}

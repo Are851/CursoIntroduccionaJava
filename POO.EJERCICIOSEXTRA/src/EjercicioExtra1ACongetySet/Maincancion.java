@@ -4,7 +4,7 @@
 ///título y el autor de la canción. 
 ///Se deberán además definir los métodos getters y setters correspondientes.
 
-package EjercExtra1ACongetySet;
+package EjercicioExtra1ACongetySet;
 
 
 public class Maincancion {
