@@ -1,55 +1,53 @@
 /*
-Realizar un programa que rellene un matriz de 4 x 4 de valores aleatorios y 
-muestre la traspuesta de la matriz. La matriz traspuesta de una matriz A se 
-denota por B y se obtiene cambiando sus filas por columnas (o viceversa).
-
+ Ejercicio 3 Recorrer un vector de N enteros contabilizando cuántos números 
+son de 1 dígito, cuántos de 2 dígitos, etcétera (hasta 5 dígitos).
  */
 package arreglosejercicio;
-        import java.util.Random;
 
+import java.util.Arrays;
 
 public class ArreglosEjercicio3 {
+// Ejercicio 3 Recorrer un vector de N enteros contabilizando cuántos números 
+ ///son de 1 dígito, cuántos de 2 dígitos, etcétera (hasta 5 dígitos).
+
+
     public static void main(String[] args) {
-        int[][] matriz = new int[4][4];
-        Random rand = new Random();
+        int[] numeros = {12, 345, 6789, 5, 3210, 9, 87, 6543};
+        int[] digitos = new int[5];
         
-        // Rellenar la matriz con valores aleatorios
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) {
-                matriz[i][j] = rand.nextInt(10); // Genera valores aleatorios entre 0 y 9
+    ///opcion 1
+//        for (int n : numeros) {
+//    if (n < 10) {
+//                digitos[0]++;
+//            } else if (n < 100) {
+//                digitos[1]++;
+//            } else if (n < 1000) {
+//                digitos[2]++;
+//            } else if (n < 10000) {
+//                digitos[3]++;
+//            } else {
+//                digitos[4]++;
+//            }
+//               }
+            for (int i = 0; i < numeros.length; i++) {
+                
+            
+            if (numeros[i] < 10) {
+                digitos[0]++;
+            } else if (numeros[i] < 100) {
+                digitos[1]++;
+            } else if (numeros[i]  < 1000) {
+                digitos[2]++;
+            } else if (numeros[i]  < 10000) {
+                digitos[3]++;
+            } else {
+                digitos[4]++;
             }
-        }
+               }
         
-        // Mostrar la matriz original
-        System.out.println("Matriz original:");
-        mostrarMatriz(matriz);
         
-        // Crear la matriz traspuesta
-        int[][] traspuesta = new int[4][4];
-        for (int i = 0; i < 4; i++) {
-            for 
-                    (int j = 0; j < 4; j++) {
-                traspuesta[i][j] = matriz[j][i]; // Intercambiar filas por columnas
-            }
-        }
-        
-        // Mostrar la matriz traspuesta
-        System.out.println("Matriz traspuesta:");
-        mostrarMatriz(traspuesta);
-    }
-    
-    // Método auxiliar para mostrar una matriz en consola
-    public static void mostrarMatriz(int[][] matriz) {
-        for (int i = 0; i < matriz.length; i++) {
-        //  for (int[] matriz1 : matriz) {
-            for (int j = 0; j < matriz[0].length; j++) {
-                System.out.print(matriz[i][j] + " ");
-            }
-            System.out.println();
-        }
-        System.out.println();
+        System.out.println(Arrays.toString(digitos));
     }
 }
-
-    
+   
 
