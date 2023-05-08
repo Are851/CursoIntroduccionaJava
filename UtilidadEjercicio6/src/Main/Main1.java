@@ -15,9 +15,12 @@ public class Main1 {
         Curso curso = new Curso();
         ServicioCurso1 curs = new ServicioCurso1();
         System.out.println("Los nombres de los alumnos son:");
+        curs.cargarAlumnos(curso);
+        ///cargo alumnos con parametros opcion1
         System.out.println(Arrays.toString(curso.getAlumnos()));
         curs.crearCurso(curso);
         System.out.println("La ganancia semanal es: $" + curs.calcularGananciaSemanal(curso));
- 
+        System.out.println(curs.cargarAlumnos());
+        ///trae la funcion sin parametros opcion2
     }
 }

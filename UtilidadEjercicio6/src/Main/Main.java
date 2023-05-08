@@ -37,7 +37,6 @@ public class Main {
         curso1.cargarAlumnos(curs);
         curso1.crearCurso(curs);
         System.out.println("La ganancia semanal es: $" + curso1.calcularGananciaSemanal(curs));
-            
     }
     
 }
