@@ -14,8 +14,7 @@ public class Meses {
     "Diciembre"};
 
 Random rand = new Random();
-int numeroAleatorio = rand.nextInt(12);
-private String mesSecreto = meses[numeroAleatorio];
+private String mesSecreto = meses[rand.nextInt(12)];
 
     public Meses() {
     }
@@ -24,34 +23,27 @@ private String mesSecreto = meses[numeroAleatorio];
         return meses;
     }
 
-    public void setMeses(String[] meses) {
-        this.meses = meses;
-    }
-
     public Random getRand() {
         return rand;
-    }
-
-    public void setRand(Random rand) {
-        this.rand = rand;
-    }
-
-    public int getNumeroAleatorio() {
-        return numeroAleatorio;
-    }
-
-    public void setNumeroAleatorio(int numeroAleatorio) {
-        this.numeroAleatorio = numeroAleatorio;
     }
 
     public String getMesSecreto() {
         return mesSecreto;
     }
 
+    public void setMeses(String[] meses) {
+        this.meses = meses;
+    }
+
+    public void setRand(Random rand) {
+        this.rand = rand;
+    }
+
     public void setMesSecreto(String mesSecreto) {
         this.mesSecreto = mesSecreto;
     }
 
+   
   
     
    
