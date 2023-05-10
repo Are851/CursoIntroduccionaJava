@@ -7,8 +7,6 @@ public class MainMesSecreto {
 
     public static void main(String[] args) {
 
-    
-
     MesSecreto ms = new MesSecreto();
     ServicioMesSecreto adivinar=new ServicioMesSecreto();
 

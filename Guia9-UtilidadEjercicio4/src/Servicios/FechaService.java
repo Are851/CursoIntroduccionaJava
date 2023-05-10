@@ -1,3 +1,15 @@
+/*
+VamosausarlaclaseDatequeyaexisteenJava.Crearemoslaclase FechaService,
+enpaqueteServicios,quetengalossiguientesmétodos: 
+a)MétodofechaNacimientoquepreguntealusuariodía,mesyañode sunacimiento.Luego
+lospaseporparámetroaunnuevoobjetoDate. 
+ElmétododeberetornarelobjetoDate.Ejemplofecha:Datefecha= newDate(anio,mes,dia);
+b)MétodofechaActualquecreeunobjetofechaconeldíaactual.Para estousaremosel
+constructorvacíodelaclaseDate.Ejemplo: Date fechaActual =newDate(); 
+ElmétododeberetornarelobjetoDate.
+c)Métododiferenciaquerecibalasdosfechasporparámetroyretorna ladiferencia
+deañosentreunayotra(edaddelusuario).
+ */
 package Servicios;
 
 import java.util.Date;

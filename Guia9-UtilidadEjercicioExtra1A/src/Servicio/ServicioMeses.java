@@ -8,6 +8,8 @@ lo hace,pedir que vuelva a intentar adivinar el mes secreto.
 Un ejemplo de ejecución del programa podría ser este: Adivine el mes secreto.
 Introduzca el nombre del mes en minúsculas: febrero No ha acertado.
 Intente adivinarlo introduciendo otro mes: agosto ¡Haacertado!
+
+Se pide los datos una sola vez
  */
 package Servicio;
 
@@ -46,7 +48,7 @@ public class ServicioMeses {
         } while (numeroIngresado < 1 || numeroIngresado > 12);
 
         String mesIngresado = ms.getMeses()[numeroIngresado - 1];
-
+///Se pide los datos una sola vez
             if (mesIngresado.equals(ms.getMesSecreto())) {
                 System.out.println("¡Adivinaste el mes secreto!");
             } else {

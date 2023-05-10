@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Pide los datos una sola vez y no tiene un condicional para ingresar un mes 
+entre 1 y 12
  */
 package Servicio;
 

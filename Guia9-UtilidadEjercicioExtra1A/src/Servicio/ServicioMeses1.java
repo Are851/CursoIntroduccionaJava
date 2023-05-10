@@ -51,6 +51,9 @@ public class ServicioMeses1 {
             } while (numeroIngresado < 1 || numeroIngresado > 12);
 
             mesIngresado = ms.getMeses()[numeroIngresado - 1];
+            /*
+Tiene un blucle que vuelve a pedir numero de mes hasta adivinar
+ */
         }
 
         System.out.println("¡Adivinaste el mes secreto! "+"El mes es "+mesIngresado);

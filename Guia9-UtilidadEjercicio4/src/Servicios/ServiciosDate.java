@@ -5,7 +5,7 @@ a)MétodofechaNacimientoquepreguntealusuariodía,mesyañode sunacimiento.Luego
 lospaseporparámetroaunnuevoobjetoDate. 
 ElmétododeberetornarelobjetoDate.Ejemplofecha:Datefecha= newDate(anio,mes,dia);
 b)MétodofechaActualquecreeunobjetofechaconeldíaactual.Para estousaremosel
-constructorvacíodelaclaseDate.Ejemplo:Date fechaActual=newDate(); 
+constructorvacíodelaclaseDate.Ejemplo: Date fechaActual =newDate(); 
 ElmétododeberetornarelobjetoDate.
 c)Métododiferenciaquerecibalasdosfechasporparámetroyretorna ladiferencia
 deañosentreunayotra(edaddelusuario).
@@ -41,10 +41,21 @@ public class ServiciosDate {
     public Date fechaActual() {
         return new Date();
     }
-
-    public int diferencia(Date fecha1, Date fecha2) {
-        long difTiempo = fecha1.getTime() - fecha2.getTime();
-        double difAnios = (double) difTiempo / (1000 * 60 * 60 * 24 * 365.25);
-        return (int) Math.floor(Math.abs(difAnios));
-    }
+///opcion 1 mandamos los parametros desde el main
+//    public int diferencia(Date fecha1, Date fecha2) {
+//        long difTiempo = fecha1.getTime() - fecha2.getTime();
+//        double difAnios = (double) difTiempo / (1000 * 60 * 60 * 24 * 365.25);
+//        return (int) Math.floor(Math.abs(difAnios));
+    
+    //Método diferencia que reciba las dos fechas por parámetro y retorna la diferencia
+//de años entre una y otra (edad del usuario).     
+    ///Opcion2 llamamos a las fechas por metodos dentrod de diferencia
+    
+       public long diferencia(){
+          long dif = fechaActual().getTime() - fechaNacimiento().getTime();
+          
+          double aniosDif = (double) dif /(1000*60*60*24*365.25);
+          return (int) Math.floor(Math.abs(aniosDif));
+                  
+       }
 }    
