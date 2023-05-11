@@ -7,7 +7,8 @@ import Servicios.PersonaService1;
 public class Main1 {
     public static void main(String[] args) {
        PersonaService1 personaService = new PersonaService1();
-        Persona persona = personaService.crearPersona();
+        Persona persona = new Persona();
+                personaService.crearPersona();
         ///Cargamos los datos en Servicios
         personaService.mostrarPersona(persona);
         int edad = personaService.calcularEdad(persona);
