@@ -20,8 +20,6 @@ public class Main {
         ServiciosCurso sc1 = new ServiciosCurso();
         Curso c1 = new Curso();
 
-        c1 = sc1.crearCurso(c1);
-
         System.out.println(c1.toString());
         for (int i = 0; i < 5; i++) {
             System.out.println(c1.getAlumnos()[i]);

@@ -23,15 +23,23 @@ public class ServicioCurso1 {
     }
     return x.getAlumnos();
 }
-///opcion2 de caargas alumnos sin parametro
-    public String[] cargarAlumnos() {
+///opcion2 de cargas alumnos sin parametro
+    public void cargarAlumnos() {
         String[] ca = new String[5];
         for (int i = 0; i < ca.length; i++) {
             System.out.print("Ingrese el nombre del alumno " + i + ": ");
             ca[i] = read.next();
         }
-        return ca;
     }
+    ///opcion 2 retorna el valor del vector
+//        public xString[]cargarAlumnos() {
+//        String[] ca = new String[5];
+//        for (int i = 0; i < ca.length; i++) {
+//            System.out.print("Ingrese el nombre del alumno " + i + ": ");
+//            ca[i] = read.next();
+//        }
+//            return ca;
+//    }
 
      public void crearCurso(Curso curs){
         System.out.print("Ingrese el nombre del curso >> ");

@@ -18,6 +18,7 @@ public class Main {
      * una edad. Retorna true si la persona es menor que la edad consultada o
      * false en caso contrario. d)Método mostrar Persona que muestra la
      * información de la persona deseada.
+     * @param args
      */
     public static void main(String[] args) {
         PersonaService personaService = new PersonaService();

@@ -30,12 +30,10 @@ public class PersonaService1 {
     }
 
     public int calcularEdad(Persona persona) {
-        Date fechaNacimiento = persona.getFechaNacimiento();
         Date fechaActual = new Date();
-        long tiempo = fechaActual.getTime() - fechaNacimiento.getTime();
-        long edadEnDias = tiempo / (1000 * 60 * 60 * 24);
-        int edad = (int) (edadEnDias / 365);
-        return edad;
+        long tiempo = fechaActual.getTime() - persona.getFechaNacimiento().getTime();
+        int edad = (int)(tiempo / (1000 * 60 * 60 * 24))/365;
+        return  edad;
     }
 
     public boolean menorQue(Persona persona, int edad) {
