@@ -37,6 +37,21 @@ import java.util.Scanner;
           
           double aniosDif = (double) dif /(1000*60*60*24*365.25);
           return (int) Math.floor(Math.abs(aniosDif));
+
+///public static void main(String[] args) {
+   ///     Scanner leer = new Scanner(System.in);
+      ///  System.out.println("Ingrese fecha de nacimiento DD/MM/AAAA....");
+      ///  String fecha = leer.nextLine();
+        
+        //    "04/10/2007"
+    ///    String[] fechaVector = fecha.split("/"); // ["04" , "10", "2007"]
+    ///    Date fechaNacimiento = new Date(Integer.parseInt(fechaVector[2])-1900,Integer.parseInt(fechaVector[1])-1,Integer.parseInt(fechaVector[0]) );
+    ///    Date fechaActual = new Date();
+    ////    double result = (fechaActual.getTime() - fechaNacimiento.getTime()) / 31536000000l;
+    //    System.out.println(result);
+    }
+
+        
                   
        }
 }   
